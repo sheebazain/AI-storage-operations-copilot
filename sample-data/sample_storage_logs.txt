@@ -1,0 +1,902 @@
+[
+  {
+    "incident_id": "INC-1001",
+    "severity": "Critical",
+    "component": "Unity XT",
+    "symptom": "Cloud tiering to S3 returning 403 errors",
+    "logs": [
+      "Unity XT generated warning event",
+      "Detected issue: Cloud tiering to S3 returning 403 errors",
+      "Diagnostic signature linked to: Outdated SMB protocol negotiation settings"
+    ],
+    "root_cause": "Outdated SMB protocol negotiation settings",
+    "resolution": [
+      "Rejoin Active Directory domain",
+      "Clear Kerberos cache",
+      "Restart SMB services"
+    ],
+    "business_impact": "Customer-facing applications impacted"
+  },
+  {
+    "incident_id": "INC-1002",
+    "severity": "Medium",
+    "component": "VxRail",
+    "symptom": "NFS mounts inaccessible after snapshot restore",
+    "logs": [
+      "VxRail generated warning event",
+      "Detected issue: NFS mounts inaccessible after snapshot restore",
+      "Diagnostic signature linked to: Kerberos ticket mismatch after domain migration"
+    ],
+    "root_cause": "Kerberos ticket mismatch after domain migration",
+    "resolution": [
+      "Delete conflicting snapshot",
+      "Restart replication workers",
+      "Validate replication queue"
+    ],
+    "business_impact": "Storage operations team escalation triggered"
+  },
+  {
+    "incident_id": "INC-1003",
+    "severity": "Medium",
+    "component": "PowerScale SyncIQ",
+    "symptom": "Latency spikes during high IOPS workloads",
+    "logs": [
+      "PowerScale SyncIQ generated warning event",
+      "Detected issue: Latency spikes during high IOPS workloads",
+      "Diagnostic signature linked to: Misconfigured export permissions on NFS service"
+    ],
+    "root_cause": "Misconfigured export permissions on NFS service",
+    "resolution": [
+      "Upgrade firmware to latest stable version",
+      "Disable adaptive interrupt coalescing",
+      "Monitor latency metrics"
+    ],
+    "business_impact": "Enterprise file access degraded"
+  },
+  {
+    "incident_id": "INC-1004",
+    "severity": "High",
+    "component": "PowerMax",
+    "symptom": "Storage pool showing unexpected capacity exhaustion",
+    "logs": [
+      "PowerMax generated warning event",
+      "Detected issue: Storage pool showing unexpected capacity exhaustion",
+      "Diagnostic signature linked to: Outdated SMB protocol negotiation settings"
+    ],
+    "root_cause": "Outdated SMB protocol negotiation settings",
+    "resolution": [
+      "Upgrade firmware to latest stable version",
+      "Disable adaptive interrupt coalescing",
+      "Monitor latency metrics"
+    ],
+    "business_impact": "High latency affecting critical applications"
+  },
+  {
+    "incident_id": "INC-1005",
+    "severity": "Medium",
+    "component": "PowerScale SyncIQ",
+    "symptom": "Backup jobs failing with timeout errors",
+    "logs": [
+      "PowerScale SyncIQ generated warning event",
+      "Detected issue: Backup jobs failing with timeout errors",
+      "Diagnostic signature linked to: Replication queue corruption after failover"
+    ],
+    "root_cause": "Replication queue corruption after failover",
+    "resolution": [
+      "Update IAM policy permissions",
+      "Revalidate cloud credentials",
+      "Retry tiering operation"
+    ],
+    "business_impact": "Cloud archival workflows delayed"
+  },
+  {
+    "incident_id": "INC-1006",
+    "severity": "Medium",
+    "component": "VxRail",
+    "symptom": "Latency spikes during high IOPS workloads",
+    "logs": [
+      "VxRail generated warning event",
+      "Detected issue: Latency spikes during high IOPS workloads",
+      "Diagnostic signature linked to: Kerberos ticket mismatch after domain migration"
+    ],
+    "root_cause": "Kerberos ticket mismatch after domain migration",
+    "resolution": [
+      "Upgrade firmware to latest stable version",
+      "Disable adaptive interrupt coalescing",
+      "Monitor latency metrics"
+    ],
+    "business_impact": "Cloud archival workflows delayed"
+  },
+  {
+    "incident_id": "INC-1007",
+    "severity": "Medium",
+    "component": "PowerFlex",
+    "symptom": "Replication jobs stuck at 99%",
+    "logs": [
+      "PowerFlex generated warning event",
+      "Detected issue: Replication jobs stuck at 99%",
+      "Diagnostic signature linked to: IAM role missing PutObjectTagging permission"
+    ],
+    "root_cause": "IAM role missing PutObjectTagging permission",
+    "resolution": [
+      "Upgrade firmware to latest stable version",
+      "Disable adaptive interrupt coalescing",
+      "Monitor latency metrics"
+    ],
+    "business_impact": "Customer-facing applications impacted"
+  },
+  {
+    "incident_id": "INC-1008",
+    "severity": "Critical",
+    "component": "PowerFlex",
+    "symptom": "Latency spikes during high IOPS workloads",
+    "logs": [
+      "PowerFlex generated warning event",
+      "Detected issue: Latency spikes during high IOPS workloads",
+      "Diagnostic signature linked to: Kerberos ticket mismatch after domain migration"
+    ],
+    "root_cause": "Kerberos ticket mismatch after domain migration",
+    "resolution": [
+      "Restart affected storage services",
+      "Validate cluster health",
+      "Re-run failed jobs"
+    ],
+    "business_impact": "Production VM access interrupted"
+  },
+  {
+    "incident_id": "INC-1009",
+    "severity": "Low",
+    "component": "VxRail",
+    "symptom": "Cloud tiering to S3 returning 403 errors",
+    "logs": [
+      "VxRail generated warning event",
+      "Detected issue: Cloud tiering to S3 returning 403 errors",
+      "Diagnostic signature linked to: Thin provisioning threshold misconfiguration"
+    ],
+    "root_cause": "Thin provisioning threshold misconfiguration",
+    "resolution": [
+      "Delete conflicting snapshot",
+      "Restart replication workers",
+      "Validate replication queue"
+    ],
+    "business_impact": "Customer-facing applications impacted"
+  },
+  {
+    "incident_id": "INC-1010",
+    "severity": "Medium",
+    "component": "Isilon SMB Service",
+    "symptom": "SMB shares disconnecting randomly",
+    "logs": [
+      "Isilon SMB Service generated warning event",
+      "Detected issue: SMB shares disconnecting randomly",
+      "Diagnostic signature linked to: Manual snapshot collision causing metadata lock"
+    ],
+    "root_cause": "Manual snapshot collision causing metadata lock",
+    "resolution": [
+      "Restart affected storage services",
+      "Validate cluster health",
+      "Re-run failed jobs"
+    ],
+    "business_impact": "Storage operations team escalation triggered"
+  },
+  {
+    "incident_id": "INC-1011",
+    "severity": "Low",
+    "component": "PowerStore",
+    "symptom": "Replication jobs stuck at 99%",
+    "logs": [
+      "PowerStore generated warning event",
+      "Detected issue: Replication jobs stuck at 99%",
+      "Diagnostic signature linked to: Misconfigured export permissions on NFS service"
+    ],
+    "root_cause": "Misconfigured export permissions on NFS service",
+    "resolution": [
+      "Rejoin Active Directory domain",
+      "Clear Kerberos cache",
+      "Restart SMB services"
+    ],
+    "business_impact": "Enterprise file access degraded"
+  },
+  {
+    "incident_id": "INC-1012",
+    "severity": "Low",
+    "component": "PowerScale SyncIQ",
+    "symptom": "Replication jobs stuck at 99%",
+    "logs": [
+      "PowerScale SyncIQ generated warning event",
+      "Detected issue: Replication jobs stuck at 99%",
+      "Diagnostic signature linked to: Misconfigured export permissions on NFS service"
+    ],
+    "root_cause": "Misconfigured export permissions on NFS service",
+    "resolution": [
+      "Update IAM policy permissions",
+      "Revalidate cloud credentials",
+      "Retry tiering operation"
+    ],
+    "business_impact": "Potential risk of data unavailability"
+  },
+  {
+    "incident_id": "INC-1013",
+    "severity": "Medium",
+    "component": "Unity XT",
+    "symptom": "Controller failover taking excessive time",
+    "logs": [
+      "Unity XT generated warning event",
+      "Detected issue: Controller failover taking excessive time",
+      "Diagnostic signature linked to: Controller memory leak under sustained workloads"
+    ],
+    "root_cause": "Controller memory leak under sustained workloads",
+    "resolution": [
+      "Rejoin Active Directory domain",
+      "Clear Kerberos cache",
+      "Restart SMB services"
+    ],
+    "business_impact": "Backup compliance SLA breached"
+  },
+  {
+    "incident_id": "INC-1014",
+    "severity": "Critical",
+    "component": "Isilon SMB Service",
+    "symptom": "Controller failover taking excessive time",
+    "logs": [
+      "Isilon SMB Service generated warning event",
+      "Detected issue: Controller failover taking excessive time",
+      "Diagnostic signature linked to: IAM role missing PutObjectTagging permission"
+    ],
+    "root_cause": "IAM role missing PutObjectTagging permission",
+    "resolution": [
+      "Delete conflicting snapshot",
+      "Restart replication workers",
+      "Validate replication queue"
+    ],
+    "business_impact": "Production VM access interrupted"
+  },
+  {
+    "incident_id": "INC-1015",
+    "severity": "Medium",
+    "component": "PowerStore",
+    "symptom": "Replication jobs stuck at 99%",
+    "logs": [
+      "PowerStore generated warning event",
+      "Detected issue: Replication jobs stuck at 99%",
+      "Diagnostic signature linked to: Outdated SMB protocol negotiation settings"
+    ],
+    "root_cause": "Outdated SMB protocol negotiation settings",
+    "resolution": [
+      "Upgrade firmware to latest stable version",
+      "Disable adaptive interrupt coalescing",
+      "Monitor latency metrics"
+    ],
+    "business_impact": "Backup compliance SLA breached"
+  },
+  {
+    "incident_id": "INC-1016",
+    "severity": "High",
+    "component": "PowerProtect DD",
+    "symptom": "Backup jobs failing with timeout errors",
+    "logs": [
+      "PowerProtect DD generated warning event",
+      "Detected issue: Backup jobs failing with timeout errors",
+      "Diagnostic signature linked to: Outdated SMB protocol negotiation settings"
+    ],
+    "root_cause": "Outdated SMB protocol negotiation settings",
+    "resolution": [
+      "Upgrade firmware to latest stable version",
+      "Disable adaptive interrupt coalescing",
+      "Monitor latency metrics"
+    ],
+    "business_impact": "High latency affecting critical applications"
+  },
+  {
+    "incident_id": "INC-1017",
+    "severity": "High",
+    "component": "Cloud Tiering Appliance",
+    "symptom": "Replication jobs stuck at 99%",
+    "logs": [
+      "Cloud Tiering Appliance generated warning event",
+      "Detected issue: Replication jobs stuck at 99%",
+      "Diagnostic signature linked to: Replication queue corruption after failover"
+    ],
+    "root_cause": "Replication queue corruption after failover",
+    "resolution": [
+      "Restart affected storage services",
+      "Validate cluster health",
+      "Re-run failed jobs"
+    ],
+    "business_impact": "Enterprise file access degraded"
+  },
+  {
+    "incident_id": "INC-1018",
+    "severity": "Medium",
+    "component": "Unity XT",
+    "symptom": "SMB shares disconnecting randomly",
+    "logs": [
+      "Unity XT generated warning event",
+      "Detected issue: SMB shares disconnecting randomly",
+      "Diagnostic signature linked to: Manual snapshot collision causing metadata lock"
+    ],
+    "root_cause": "Manual snapshot collision causing metadata lock",
+    "resolution": [
+      "Delete conflicting snapshot",
+      "Restart replication workers",
+      "Validate replication queue"
+    ],
+    "business_impact": "Potential risk of data unavailability"
+  },
+  {
+    "incident_id": "INC-1019",
+    "severity": "Medium",
+    "component": "VxRail",
+    "symptom": "Storage pool showing unexpected capacity exhaustion",
+    "logs": [
+      "VxRail generated warning event",
+      "Detected issue: Storage pool showing unexpected capacity exhaustion",
+      "Diagnostic signature linked to: Expired SSL certificate for backup communication"
+    ],
+    "root_cause": "Expired SSL certificate for backup communication",
+    "resolution": [
+      "Upgrade firmware to latest stable version",
+      "Disable adaptive interrupt coalescing",
+      "Monitor latency metrics"
+    ],
+    "business_impact": "Enterprise file access degraded"
+  },
+  {
+    "incident_id": "INC-1020",
+    "severity": "Low",
+    "component": "Isilon SMB Service",
+    "symptom": "Snapshot schedules failing intermittently",
+    "logs": [
+      "Isilon SMB Service generated warning event",
+      "Detected issue: Snapshot schedules failing intermittently",
+      "Diagnostic signature linked to: Misconfigured export permissions on NFS service"
+    ],
+    "root_cause": "Misconfigured export permissions on NFS service",
+    "resolution": [
+      "Rejoin Active Directory domain",
+      "Clear Kerberos cache",
+      "Restart SMB services"
+    ],
+    "business_impact": "Potential risk of data unavailability"
+  },
+  {
+    "incident_id": "INC-1021",
+    "severity": "Critical",
+    "component": "Isilon SMB Service",
+    "symptom": "SMB shares disconnecting randomly",
+    "logs": [
+      "Isilon SMB Service generated warning event",
+      "Detected issue: SMB shares disconnecting randomly",
+      "Diagnostic signature linked to: Replication queue corruption after failover"
+    ],
+    "root_cause": "Replication queue corruption after failover",
+    "resolution": [
+      "Upgrade firmware to latest stable version",
+      "Disable adaptive interrupt coalescing",
+      "Monitor latency metrics"
+    ],
+    "business_impact": "Potential risk of data unavailability"
+  },
+  {
+    "incident_id": "INC-1022",
+    "severity": "High",
+    "component": "PowerFlex",
+    "symptom": "Snapshot schedules failing intermittently",
+    "logs": [
+      "PowerFlex generated warning event",
+      "Detected issue: Snapshot schedules failing intermittently",
+      "Diagnostic signature linked to: Controller memory leak under sustained workloads"
+    ],
+    "root_cause": "Controller memory leak under sustained workloads",
+    "resolution": [
+      "Rejoin Active Directory domain",
+      "Clear Kerberos cache",
+      "Restart SMB services"
+    ],
+    "business_impact": "Authentication failures impacting end users"
+  },
+  {
+    "incident_id": "INC-1023",
+    "severity": "High",
+    "component": "PowerProtect DD",
+    "symptom": "Cloud tiering to S3 returning 403 errors",
+    "logs": [
+      "PowerProtect DD generated warning event",
+      "Detected issue: Cloud tiering to S3 returning 403 errors",
+      "Diagnostic signature linked to: Replication queue corruption after failover"
+    ],
+    "root_cause": "Replication queue corruption after failover",
+    "resolution": [
+      "Restart affected storage services",
+      "Validate cluster health",
+      "Re-run failed jobs"
+    ],
+    "business_impact": "High latency affecting critical applications"
+  },
+  {
+    "incident_id": "INC-1024",
+    "severity": "High",
+    "component": "Cloud Tiering Appliance",
+    "symptom": "Latency spikes during high IOPS workloads",
+    "logs": [
+      "Cloud Tiering Appliance generated warning event",
+      "Detected issue: Latency spikes during high IOPS workloads",
+      "Diagnostic signature linked to: Thin provisioning threshold misconfiguration"
+    ],
+    "root_cause": "Thin provisioning threshold misconfiguration",
+    "resolution": [
+      "Restart affected storage services",
+      "Validate cluster health",
+      "Re-run failed jobs"
+    ],
+    "business_impact": "Storage operations team escalation triggered"
+  },
+  {
+    "incident_id": "INC-1025",
+    "severity": "Medium",
+    "component": "VxRail",
+    "symptom": "Storage pool showing unexpected capacity exhaustion",
+    "logs": [
+      "VxRail generated warning event",
+      "Detected issue: Storage pool showing unexpected capacity exhaustion",
+      "Diagnostic signature linked to: Outdated SMB protocol negotiation settings"
+    ],
+    "root_cause": "Outdated SMB protocol negotiation settings",
+    "resolution": [
+      "Rejoin Active Directory domain",
+      "Clear Kerberos cache",
+      "Restart SMB services"
+    ],
+    "business_impact": "Cloud archival workflows delayed"
+  },
+  {
+    "incident_id": "INC-1026",
+    "severity": "Critical",
+    "component": "Cloud Tiering Appliance",
+    "symptom": "SMB shares disconnecting randomly",
+    "logs": [
+      "Cloud Tiering Appliance generated warning event",
+      "Detected issue: SMB shares disconnecting randomly",
+      "Diagnostic signature linked to: Controller memory leak under sustained workloads"
+    ],
+    "root_cause": "Controller memory leak under sustained workloads",
+    "resolution": [
+      "Restart affected storage services",
+      "Validate cluster health",
+      "Re-run failed jobs"
+    ],
+    "business_impact": "Disaster recovery replication halted"
+  },
+  {
+    "incident_id": "INC-1027",
+    "severity": "Critical",
+    "component": "PowerProtect DD",
+    "symptom": "Replication jobs stuck at 99%",
+    "logs": [
+      "PowerProtect DD generated warning event",
+      "Detected issue: Replication jobs stuck at 99%",
+      "Diagnostic signature linked to: Controller memory leak under sustained workloads"
+    ],
+    "root_cause": "Controller memory leak under sustained workloads",
+    "resolution": [
+      "Update IAM policy permissions",
+      "Revalidate cloud credentials",
+      "Retry tiering operation"
+    ],
+    "business_impact": "Production VM access interrupted"
+  },
+  {
+    "incident_id": "INC-1028",
+    "severity": "Critical",
+    "component": "ECS Object Storage",
+    "symptom": "Storage pool showing unexpected capacity exhaustion",
+    "logs": [
+      "ECS Object Storage generated warning event",
+      "Detected issue: Storage pool showing unexpected capacity exhaustion",
+      "Diagnostic signature linked to: Thin provisioning threshold misconfiguration"
+    ],
+    "root_cause": "Thin provisioning threshold misconfiguration",
+    "resolution": [
+      "Delete conflicting snapshot",
+      "Restart replication workers",
+      "Validate replication queue"
+    ],
+    "business_impact": "Production VM access interrupted"
+  },
+  {
+    "incident_id": "INC-1029",
+    "severity": "Medium",
+    "component": "PowerScale SyncIQ",
+    "symptom": "Controller failover taking excessive time",
+    "logs": [
+      "PowerScale SyncIQ generated warning event",
+      "Detected issue: Controller failover taking excessive time",
+      "Diagnostic signature linked to: Kerberos ticket mismatch after domain migration"
+    ],
+    "root_cause": "Kerberos ticket mismatch after domain migration",
+    "resolution": [
+      "Rejoin Active Directory domain",
+      "Clear Kerberos cache",
+      "Restart SMB services"
+    ],
+    "business_impact": "Backup compliance SLA breached"
+  },
+  {
+    "incident_id": "INC-1030",
+    "severity": "Critical",
+    "component": "ECS Object Storage",
+    "symptom": "Latency spikes during high IOPS workloads",
+    "logs": [
+      "ECS Object Storage generated warning event",
+      "Detected issue: Latency spikes during high IOPS workloads",
+      "Diagnostic signature linked to: Controller memory leak under sustained workloads"
+    ],
+    "root_cause": "Controller memory leak under sustained workloads",
+    "resolution": [
+      "Restart affected storage services",
+      "Validate cluster health",
+      "Re-run failed jobs"
+    ],
+    "business_impact": "Potential risk of data unavailability"
+  },
+  {
+    "incident_id": "INC-1031",
+    "severity": "Critical",
+    "component": "PowerProtect DD",
+    "symptom": "SMB shares disconnecting randomly",
+    "logs": [
+      "PowerProtect DD generated warning event",
+      "Detected issue: SMB shares disconnecting randomly",
+      "Diagnostic signature linked to: IAM role missing PutObjectTagging permission"
+    ],
+    "root_cause": "IAM role missing PutObjectTagging permission",
+    "resolution": [
+      "Rejoin Active Directory domain",
+      "Clear Kerberos cache",
+      "Restart SMB services"
+    ],
+    "business_impact": "Storage operations team escalation triggered"
+  },
+  {
+    "incident_id": "INC-1032",
+    "severity": "Critical",
+    "component": "ECS Object Storage",
+    "symptom": "Cloud tiering to S3 returning 403 errors",
+    "logs": [
+      "ECS Object Storage generated warning event",
+      "Detected issue: Cloud tiering to S3 returning 403 errors",
+      "Diagnostic signature linked to: Manual snapshot collision causing metadata lock"
+    ],
+    "root_cause": "Manual snapshot collision causing metadata lock",
+    "resolution": [
+      "Update IAM policy permissions",
+      "Revalidate cloud credentials",
+      "Retry tiering operation"
+    ],
+    "business_impact": "Enterprise file access degraded"
+  },
+  {
+    "incident_id": "INC-1033",
+    "severity": "Critical",
+    "component": "PowerStore",
+    "symptom": "Storage pool showing unexpected capacity exhaustion",
+    "logs": [
+      "PowerStore generated warning event",
+      "Detected issue: Storage pool showing unexpected capacity exhaustion",
+      "Diagnostic signature linked to: Thin provisioning threshold misconfiguration"
+    ],
+    "root_cause": "Thin provisioning threshold misconfiguration",
+    "resolution": [
+      "Rejoin Active Directory domain",
+      "Clear Kerberos cache",
+      "Restart SMB services"
+    ],
+    "business_impact": "Enterprise file access degraded"
+  },
+  {
+    "incident_id": "INC-1034",
+    "severity": "High",
+    "component": "Cloud Tiering Appliance",
+    "symptom": "NFS mounts inaccessible after snapshot restore",
+    "logs": [
+      "Cloud Tiering Appliance generated warning event",
+      "Detected issue: NFS mounts inaccessible after snapshot restore",
+      "Diagnostic signature linked to: Outdated SMB protocol negotiation settings"
+    ],
+    "root_cause": "Outdated SMB protocol negotiation settings",
+    "resolution": [
+      "Upgrade firmware to latest stable version",
+      "Disable adaptive interrupt coalescing",
+      "Monitor latency metrics"
+    ],
+    "business_impact": "Customer-facing applications impacted"
+  },
+  {
+    "incident_id": "INC-1035",
+    "severity": "Critical",
+    "component": "Cloud Tiering Appliance",
+    "symptom": "CIFS authentication failures after AD migration",
+    "logs": [
+      "Cloud Tiering Appliance generated warning event",
+      "Detected issue: CIFS authentication failures after AD migration",
+      "Diagnostic signature linked to: Firmware conflict with NVMe interrupt coalescing"
+    ],
+    "root_cause": "Firmware conflict with NVMe interrupt coalescing",
+    "resolution": [
+      "Upgrade firmware to latest stable version",
+      "Disable adaptive interrupt coalescing",
+      "Monitor latency metrics"
+    ],
+    "business_impact": "Disaster recovery replication halted"
+  },
+  {
+    "incident_id": "INC-1036",
+    "severity": "High",
+    "component": "Unity XT",
+    "symptom": "Snapshot schedules failing intermittently",
+    "logs": [
+      "Unity XT generated warning event",
+      "Detected issue: Snapshot schedules failing intermittently",
+      "Diagnostic signature linked to: Expired SSL certificate for backup communication"
+    ],
+    "root_cause": "Expired SSL certificate for backup communication",
+    "resolution": [
+      "Upgrade firmware to latest stable version",
+      "Disable adaptive interrupt coalescing",
+      "Monitor latency metrics"
+    ],
+    "business_impact": "Customer-facing applications impacted"
+  },
+  {
+    "incident_id": "INC-1037",
+    "severity": "High",
+    "component": "PowerFlex",
+    "symptom": "CIFS authentication failures after AD migration",
+    "logs": [
+      "PowerFlex generated warning event",
+      "Detected issue: CIFS authentication failures after AD migration",
+      "Diagnostic signature linked to: Manual snapshot collision causing metadata lock"
+    ],
+    "root_cause": "Manual snapshot collision causing metadata lock",
+    "resolution": [
+      "Upgrade firmware to latest stable version",
+      "Disable adaptive interrupt coalescing",
+      "Monitor latency metrics"
+    ],
+    "business_impact": "Authentication failures impacting end users"
+  },
+  {
+    "incident_id": "INC-1038",
+    "severity": "High",
+    "component": "PowerStore",
+    "symptom": "CIFS authentication failures after AD migration",
+    "logs": [
+      "PowerStore generated warning event",
+      "Detected issue: CIFS authentication failures after AD migration",
+      "Diagnostic signature linked to: Replication queue corruption after failover"
+    ],
+    "root_cause": "Replication queue corruption after failover",
+    "resolution": [
+      "Restart affected storage services",
+      "Validate cluster health",
+      "Re-run failed jobs"
+    ],
+    "business_impact": "High latency affecting critical applications"
+  },
+  {
+    "incident_id": "INC-1039",
+    "severity": "Critical",
+    "component": "VxRail",
+    "symptom": "CIFS authentication failures after AD migration",
+    "logs": [
+      "VxRail generated warning event",
+      "Detected issue: CIFS authentication failures after AD migration",
+      "Diagnostic signature linked to: Controller memory leak under sustained workloads"
+    ],
+    "root_cause": "Controller memory leak under sustained workloads",
+    "resolution": [
+      "Rejoin Active Directory domain",
+      "Clear Kerberos cache",
+      "Restart SMB services"
+    ],
+    "business_impact": "Disaster recovery replication halted"
+  },
+  {
+    "incident_id": "INC-1040",
+    "severity": "High",
+    "component": "VxRail",
+    "symptom": "Backup jobs failing with timeout errors",
+    "logs": [
+      "VxRail generated warning event",
+      "Detected issue: Backup jobs failing with timeout errors",
+      "Diagnostic signature linked to: Outdated SMB protocol negotiation settings"
+    ],
+    "root_cause": "Outdated SMB protocol negotiation settings",
+    "resolution": [
+      "Restart affected storage services",
+      "Validate cluster health",
+      "Re-run failed jobs"
+    ],
+    "business_impact": "High latency affecting critical applications"
+  },
+  {
+    "incident_id": "INC-1041",
+    "severity": "Medium",
+    "component": "Isilon SMB Service",
+    "symptom": "Latency spikes during high IOPS workloads",
+    "logs": [
+      "Isilon SMB Service generated warning event",
+      "Detected issue: Latency spikes during high IOPS workloads",
+      "Diagnostic signature linked to: Expired SSL certificate for backup communication"
+    ],
+    "root_cause": "Expired SSL certificate for backup communication",
+    "resolution": [
+      "Restart affected storage services",
+      "Validate cluster health",
+      "Re-run failed jobs"
+    ],
+    "business_impact": "Backup compliance SLA breached"
+  },
+  {
+    "incident_id": "INC-1042",
+    "severity": "Critical",
+    "component": "ECS Object Storage",
+    "symptom": "Storage pool showing unexpected capacity exhaustion",
+    "logs": [
+      "ECS Object Storage generated warning event",
+      "Detected issue: Storage pool showing unexpected capacity exhaustion",
+      "Diagnostic signature linked to: Misconfigured export permissions on NFS service"
+    ],
+    "root_cause": "Misconfigured export permissions on NFS service",
+    "resolution": [
+      "Upgrade firmware to latest stable version",
+      "Disable adaptive interrupt coalescing",
+      "Monitor latency metrics"
+    ],
+    "business_impact": "Customer-facing applications impacted"
+  },
+  {
+    "incident_id": "INC-1043",
+    "severity": "Critical",
+    "component": "Cloud Tiering Appliance",
+    "symptom": "Replication jobs stuck at 99%",
+    "logs": [
+      "Cloud Tiering Appliance generated warning event",
+      "Detected issue: Replication jobs stuck at 99%",
+      "Diagnostic signature linked to: Expired SSL certificate for backup communication"
+    ],
+    "root_cause": "Expired SSL certificate for backup communication",
+    "resolution": [
+      "Update IAM policy permissions",
+      "Revalidate cloud credentials",
+      "Retry tiering operation"
+    ],
+    "business_impact": "Production VM access interrupted"
+  },
+  {
+    "incident_id": "INC-1044",
+    "severity": "Critical",
+    "component": "Unity XT",
+    "symptom": "Latency spikes during high IOPS workloads",
+    "logs": [
+      "Unity XT generated warning event",
+      "Detected issue: Latency spikes during high IOPS workloads",
+      "Diagnostic signature linked to: Replication queue corruption after failover"
+    ],
+    "root_cause": "Replication queue corruption after failover",
+    "resolution": [
+      "Rejoin Active Directory domain",
+      "Clear Kerberos cache",
+      "Restart SMB services"
+    ],
+    "business_impact": "Storage operations team escalation triggered"
+  },
+  {
+    "incident_id": "INC-1045",
+    "severity": "Critical",
+    "component": "Unity XT",
+    "symptom": "Storage pool showing unexpected capacity exhaustion",
+    "logs": [
+      "Unity XT generated warning event",
+      "Detected issue: Storage pool showing unexpected capacity exhaustion",
+      "Diagnostic signature linked to: Kerberos ticket mismatch after domain migration"
+    ],
+    "root_cause": "Kerberos ticket mismatch after domain migration",
+    "resolution": [
+      "Delete conflicting snapshot",
+      "Restart replication workers",
+      "Validate replication queue"
+    ],
+    "business_impact": "Production VM access interrupted"
+  },
+  {
+    "incident_id": "INC-1046",
+    "severity": "High",
+    "component": "Cloud Tiering Appliance",
+    "symptom": "Storage pool showing unexpected capacity exhaustion",
+    "logs": [
+      "Cloud Tiering Appliance generated warning event",
+      "Detected issue: Storage pool showing unexpected capacity exhaustion",
+      "Diagnostic signature linked to: Expired SSL certificate for backup communication"
+    ],
+    "root_cause": "Expired SSL certificate for backup communication",
+    "resolution": [
+      "Upgrade firmware to latest stable version",
+      "Disable adaptive interrupt coalescing",
+      "Monitor latency metrics"
+    ],
+    "business_impact": "Authentication failures impacting end users"
+  },
+  {
+    "incident_id": "INC-1047",
+    "severity": "Critical",
+    "component": "PowerFlex",
+    "symptom": "SMB shares disconnecting randomly",
+    "logs": [
+      "PowerFlex generated warning event",
+      "Detected issue: SMB shares disconnecting randomly",
+      "Diagnostic signature linked to: Misconfigured export permissions on NFS service"
+    ],
+    "root_cause": "Misconfigured export permissions on NFS service",
+    "resolution": [
+      "Upgrade firmware to latest stable version",
+      "Disable adaptive interrupt coalescing",
+      "Monitor latency metrics"
+    ],
+    "business_impact": "Disaster recovery replication halted"
+  },
+  {
+    "incident_id": "INC-1048",
+    "severity": "Medium",
+    "component": "PowerStore",
+    "symptom": "Replication jobs stuck at 99%",
+    "logs": [
+      "PowerStore generated warning event",
+      "Detected issue: Replication jobs stuck at 99%",
+      "Diagnostic signature linked to: Outdated SMB protocol negotiation settings"
+    ],
+    "root_cause": "Outdated SMB protocol negotiation settings",
+    "resolution": [
+      "Rejoin Active Directory domain",
+      "Clear Kerberos cache",
+      "Restart SMB services"
+    ],
+    "business_impact": "Storage operations team escalation triggered"
+  },
+  {
+    "incident_id": "INC-1049",
+    "severity": "Critical",
+    "component": "PowerProtect DD",
+    "symptom": "Controller failover taking excessive time",
+    "logs": [
+      "PowerProtect DD generated warning event",
+      "Detected issue: Controller failover taking excessive time",
+      "Diagnostic signature linked to: IAM role missing PutObjectTagging permission"
+    ],
+    "root_cause": "IAM role missing PutObjectTagging permission",
+    "resolution": [
+      "Restart affected storage services",
+      "Validate cluster health",
+      "Re-run failed jobs"
+    ],
+    "business_impact": "Storage operations team escalation triggered"
+  },
+  {
+    "incident_id": "INC-1050",
+    "severity": "Critical",
+    "component": "Isilon SMB Service",
+    "symptom": "Cloud tiering to S3 returning 403 errors",
+    "logs": [
+      "Isilon SMB Service generated warning event",
+      "Detected issue: Cloud tiering to S3 returning 403 errors",
+      "Diagnostic signature linked to: Replication queue corruption after failover"
+    ],
+    "root_cause": "Replication queue corruption after failover",
+    "resolution": [
+      "Upgrade firmware to latest stable version",
+      "Disable adaptive interrupt coalescing",
+      "Monitor latency metrics"
+    ],
+    "business_impact": "Disaster recovery replication halted"
+  }
+]
